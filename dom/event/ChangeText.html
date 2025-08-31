@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1 class="change_text">Dom</h1>
+<button onclick="handleChanageContent()">Click here</button>
+
+<script>
+function handleChanageContent() {
+    const textChange = document.getElementById('change_text')
+    console.log("textChange",textChange)  
+    textChange.innerText = "Updated"
+
+}
+
+</script>
+
+
+</body>
+</html>

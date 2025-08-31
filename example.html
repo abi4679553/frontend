@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Dom - > getElementById, getElementsByClassName, querySelector, querySelectorAll -->
+
+    <p id="para" >Hello World</p>
+
+    <input name="name" id="username" value="anu"/>
+
+    <p id="user"> </p>
+
+    <!-- <p id="p2"></p>   //getElementById-->
+
+    <h1 class="head"></h1>
+    <h2 class="head"></h2>
+<script>
+
+    //getElementBYID
+    // let p1 = document.getElementById('para')
+    // console.log(p1.textContent)
+
+    // let p2 = document.getElementById('p2')
+    // console.log(p2)
+    // p2.innerHTML = p1.textContent
+
+
+    //querySelector
+
+    // let p1 = document.querySelector('#para')
+    // console.log(p1.textContent)
+
+    // let p2 = document.querySelector('.head')
+    // console.log(p2.textContent)
+    // p2.textContent = p1.textContent
+
+
+    // getElementsByClassName 
+
+
+
+    let a = document.getElementsByClassName('head')
+
+    let b = document.getElementById('para')
+    console.log(b.textContent)
+
+    console.log(a)
+
+    Array.from(a).forEach((heads, index) =>
+        {
+heads.textContent = b.textContent
+console.log(heads)
+        }
+    )
+
+    
+    // Input form 
+
+    let username = document.getElementById('username').value
+    console.log(username)
+
+    let user = document.getElementById('user')
+    console.log(user)
+    user.textContent = username
+
+
+     
+
+</script>    
+
+</body>
+</html>
+
+
+
+
+
